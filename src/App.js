@@ -1,16 +1,16 @@
 import React from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
+import Timeline from "./Timeline";
 
 function App() {
   return (
     <div className="app">
-      <h2>I am the greatest programmer.</h2>
-
       {/* Sidebar */}
       <Sidebar />
 
-      {/* TimeLine */}
+      {/* Timeline */}
+      <Timeline />
 
       {/* Widgets */}
     </div>

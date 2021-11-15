@@ -3,6 +3,7 @@ import "./Sidebar.css";
 import SidebarOption from "./SidebarOption";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeIcon from "@mui/icons-material/Home";
+import Search from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
@@ -15,7 +16,7 @@ function Sidebar() {
   return (
     <div className="sidebar">
       {/* Twitter icon */}
-      <TwitterIcon />
+      <TwitterIcon className="sidebar--twitterIcon" />
 
       {/* SidebarOption */}
       {/* SidebarOption */}
@@ -24,7 +25,7 @@ function Sidebar() {
       {/* SidebarOption */}
       {/* SidebarOption */}
       <SidebarOption active text="ホーム" Icon={HomeIcon} />
-      <SidebarOption text="話題を検索" Icon={TwitterIcon} />
+      <SidebarOption text="話題を検索" Icon={Search} />
       <SidebarOption text="通知" Icon={NotificationsNoneIcon} />
       <SidebarOption text="メッセージ" Icon={MailOutlineIcon} />
       <SidebarOption text="ブックマーク" Icon={BookmarkBorderIcon} />
