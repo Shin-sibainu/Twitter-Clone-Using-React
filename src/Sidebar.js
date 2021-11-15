@@ -9,6 +9,7 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import { Button } from "@mui/material";
 
 function Sidebar() {
   return (
@@ -22,7 +23,7 @@ function Sidebar() {
       {/* SidebarOption */}
       {/* SidebarOption */}
       {/* SidebarOption */}
-      <SidebarOption text="ホーム" Icon={HomeIcon} />
+      <SidebarOption active text="ホーム" Icon={HomeIcon} />
       <SidebarOption text="話題を検索" Icon={TwitterIcon} />
       <SidebarOption text="通知" Icon={NotificationsNoneIcon} />
       <SidebarOption text="メッセージ" Icon={MailOutlineIcon} />
@@ -32,6 +33,9 @@ function Sidebar() {
       <SidebarOption text="もっとみる" Icon={MoreHorizIcon} />
 
       {/* Button -> Tweet */}
+      <Button variant="outlined" className="sidebar--tweet" fullWidth>
+        ツイートする
+      </Button>
     </div>
   );
 }
