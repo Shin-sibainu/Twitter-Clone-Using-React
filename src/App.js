@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
 import Timeline from "./Timeline";
+import Widgets from "./Widgets";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Timeline />
 
       {/* Widgets */}
+      <Widgets />
     </div>
   );
 }
