@@ -9,27 +9,28 @@ import {
 import React from "react";
 import "./Post.css";
 import catImage from "./images/cat.jpg";
+/* displayName, username, verified, text, image, avatarは最初はハードコーディング */
 function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post--avatar">
-        <Avatar />
+        <Avatar src={avatar} />
       </div>
       <div className="post--body">
         <div className="post--header">
           <div className="post--headerText">
             <h3>
-              Shin Code
+              {displayName}
               <span className="post--headerSpecial">
-                <VerifiedUser className="post--badge" /> @shincode
+                <VerifiedUser className="post--badge" /> @{username}
               </span>
             </h3>
           </div>
           <div className="post--headerDescription">
-            <p>私は今、ツイッタークローンを作ろうとしています。</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img src={catImage} alt="cat" />
+        <img src={image} alt="cat" />
         <div className="post--footer">
           <ChatBubbleOutline fontSize="small" />
           <Repeat fontSize="small" />
