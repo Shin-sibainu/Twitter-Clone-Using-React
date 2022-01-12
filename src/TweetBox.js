@@ -1,6 +1,6 @@
 import { Avatar, Button } from "@material-ui/core";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import db from "./firebase";
 import "./TweetBox.css";
 
@@ -18,7 +18,7 @@ function TweetBox() {
       verified: true,
       text: tweetMessage,
       image: tweetImage,
-      avatar: "",
+      avatar: "http://shincode.info/wp-content/uploads/2021/12/icon.png",
       timestamp: serverTimestamp(),
     });
 
